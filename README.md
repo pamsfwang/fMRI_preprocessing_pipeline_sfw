@@ -6,10 +6,10 @@ Please read the PDF manual for details.
 
 **Reference:**
 Thackery Brown (Cognitive Neuroimaging Lab),     
-[Mumford Brain Stats videos on youtube]: https://www.youtube.com/channel/UCZ7gF0zm35FwrFpDND6DWeA,        
-Maureen Ritchey's Github (ritcheym), 
-ArtRepair website, 
-SPM manual
+[Mumford Brain Stats videos](https://www.youtube.com/channel/UCZ7gF0zm35FwrFpDND6DWeA),        
+Maureen Ritchey's Github (ritcheym),     
+[ArtRepair website](https://cibsr.stanford.edu/tools/human-brain-project/artrepair-software.html),     
+[SPM manual](https://www.fil.ion.ucl.ac.uk/spm/doc/spm12_manual.pdf)
 
 ## Step00: Check header Information
 
@@ -52,7 +52,7 @@ Align each image in a time series with a reference image. Uses rigid body motion
 Relative displacement (i.e. how far a volume moved from the last scan) is typically more informative about the change in BOLD signal magnitude.
 
 ## Step06: Fix bad volumes
-Outlier volumes may be caused by exceeding a intensity variation threshold and/or a scan-to-scan motion threshold. It is also possible to manually enter bad volumes (e.g. technical issues happened, loss of behavioral data, etc)
+Outlier volumes may be caused by exceeding an intensity variation threshold and/or a scan-to-scan motion threshold. You can either use ArtRepair function to automaticlaly identify and repair these outlier volumes or manually enter bad volume numbers for repairing (e.g. technical issues happened, loss of behavioral data, etc). 
 
 
 
