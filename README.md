@@ -6,7 +6,7 @@ Please read the PDF manual for details.
 
 **Reference:**
 Thackery Brown (Cognitive Neuroimaging Lab),     
-[Mumford Brain Stats videos on youtube] (https://www.youtube.com/channel/UCZ7gF0zm35FwrFpDND6DWeA),        
+[Mumford Brain Stats videos on youtube]: https://www.youtube.com/channel/UCZ7gF0zm35FwrFpDND6DWeA,        
 Maureen Ritchey's Github (ritcheym), 
 ArtRepair website, 
 SPM manual
