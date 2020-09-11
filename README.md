@@ -11,7 +11,7 @@ Maureen Ritchey's Github (ritcheym),
 ArtRepair website, 
 SPM manual
 
-## Step00:Header Information
+## Step00: Header Information
 
 Header information contained details on how your data were being stored and some details about data acquisition.
 Why correct header is important:
