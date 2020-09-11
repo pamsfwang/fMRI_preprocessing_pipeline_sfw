@@ -39,13 +39,13 @@ Source of noise:
 
 ## Step05: Slice timing and motion correction
 **Slice timing correction**    
-Correct differences in image acquisition time between slides. If your TR is 2 seconds, the time difference between the first slide and the last slide you collected is 2 seconds! The GLM model assumes slides were collected at the same time. Therefore, you can either fix the model or fix the signal (functional image).
-• slice timing differences are worse in event related design      
-• Short TR would have less slice timing differences (obviously). According to Mumford, if your TR <=2 + interleaved acquisition + spatial smoothing, you can reduce slice timing effects (actually, Momford does not do slice timing correction for her data). 
-• Adding temporal derivatives to model would help  
-Basically, doing slice timing correction in preprocessing is fixing the signal by interpolation. This is also why removing outlier slides or volumes before preprocessing is important. If you do not remove outliers, those “bad” signal will be used in interpolation.
-• This is accomplished by a simple shift of the phase of the sines that make up the signal and the correction works by lagging theme-series data on each slice using sinc-interpolation  
-• each time series having the values that would have been obtained had the slice been acquired at the same time as the reference slice  
+Correct differences in image acquisition time between slides. If your TR is 2 seconds, the time difference between the first slide and the last slide you collected is 2 seconds! The GLM model assumes slides were collected at the same time. Therefore, you can either fix the model or fix the signal (functional image).        
+* Slice timing differences are worse in event related design      
+* Short TR would have less slice timing differences (obviously). According to Mumford, if your TR <=2 + interleaved acquisition + spatial smoothing, you can reduce slice timing effects (actually, Momford does not do slice timing correction for her data)        
+* Adding temporal derivatives to model would help    
+* Doing slice timing correction in preprocessing is fixing the signal by interpolation. This is also why removing outlier slides or volumes before preprocessing is important. If you do not remove outliers, those “bad” signal will be used in interpolation.       
+* This is accomplished by a simple shift of the phase of the sines that make up the signal and the correction works by lagging theme-series data on each slice using sinc-interpolation     
+* Each time series having the values that would have been obtained had the slice been acquired at the same time as the reference slice  
 
 **Motion correction (Realignment)**   
 Align each image in a time series with a reference image. Uses rigid body motion correction (x,y,z, 3 rotations). Register each volume to a reference volume. You will obtain motion parameters (how much a volume is being moved to match the reference) after doing registration. Motion parameters can be used to illustrate the motion over time.
