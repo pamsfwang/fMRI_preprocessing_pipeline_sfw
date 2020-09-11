@@ -34,8 +34,8 @@ Software: ArtRepair (Center for Interdisciplinary Brain Sciences Research, Stanf
 ## Step04: Fix bad slices (ArtRepair)
 Bad slices: abnormally high or low tSNR of a slice
 Source of noise:
-• increase background signal: ArtRepair
-• decrease object signal: CNI QA
+* Increase background signal: ArtRepair
+* Decrease object signal: CNI QA
 
 ## Step05: Slice timing and motion correction
 **Slice timing correction**    
